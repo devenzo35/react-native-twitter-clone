@@ -2,9 +2,11 @@ import React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import { dimensions } from "../helpers/dimensions";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/core";
 
-export const Navigation = ({ navigation }: any) => {
+export const Navigation = () => {
   console.log("object");
+  const navigation = useNavigation();
 
   return (
     <>
